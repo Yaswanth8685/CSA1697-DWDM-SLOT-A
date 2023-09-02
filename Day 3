@@ -1,0 +1,124 @@
+Experiment-1
+Program
+@relation exp1
+@attribute a{true,false}
+@attribute b{true,false}
+@attribute c{true,false}
+@attribute d{true,false}
+@attribute e{true,false}
+@data
+true,false,false,true,true
+true,true,true,false,true
+true,true,false,true,true
+true,false,true,true,true
+false,true,true,false,true
+false,true,false,true,true
+false,false,true,true,false
+true,true,true,false,false
+true,false,false,true,true
+true,true,false,false,true
+output
+
+FB growth
+Experiment -2
+Program
+@relation exp1
+@attribute milk{true,false}
+@attribute beer{true,false}
+@attribute diapers{true,false}
+@attribute bread{true,false}
+@attribute butter{true,false}
+@attribute cookies{true,false}
+@data
+true,true,true,false,false,false
+true,false,false,true,true,false
+true,false,true,false,false,true
+false,false,false,true,true,true
+false,true,true,false,false,true
+true,false,true,true,true,false
+false,false,true,true,true,false
+false,true,true,false,false,false
+true,false,true,true,true,false
+false,true,false,false,false,true
+output
+
+
+Experiment-3
+Program
+@relation exp1
+@attribute age{young,middle,old}
+@attribute income{high,medium,low}
+@attribute student{no,yes}
+@attribute credit_rating{fair,excellent}
+@attribute class:buys_computer{no,yes}
+@data
+young,high,no,fair,no
+young,high,no,excellent,no
+middle,high,no,fair,yes
+old,medium,no,fair,yes
+old,low,yes,fair,yes
+old,low,yes,excellent,no
+middle,low,yes,excellent,yes
+young,medium,no,fair,no
+young,low,yes,fair,yes
+old,medium,yes,fair,yes
+young,medium,yes,excellent,yes
+middle,medium,no,excellent,yes
+middle,high,yes,fair,yes
+old,medium,no,excellent,no
+output
+
+
+
+Experiment-4
+
+
+
+Experiment-5
+Program
+@relation exp1
+@attribute M{true,false}
+@attribute O{true,false}
+@attribute N{true,false}
+@attribute K{true,false}
+@attribute E{true,false}
+@attribute Y{true,false}
+@attribute D{true,false}
+@attribute A{true,false}
+@attribute U{true,false}
+@attribute C{true,false}
+@attribute I{true,false}
+@data
+true,true,true,true,true,true,false,false,false,false,false
+false,true,true,true,true,true,true,false,false,false,false
+true,false,false,true,false,false,false,true,false,false,false
+true,false,false,true,false,true,false,false,true,true,false
+false,true,false,false,true,false,false,false,false,true,true
+output;
+
+
+
+Experiment-6
+Program
+@relation exp1
+@attribute hotdogs{true,false}
+@attribute buns{true,false}
+@attribute ketchup{true,false}
+@attribute coke{true,false}
+@attribute chips{true,false}
+@data
+true,true,true,false,false
+true,true,false,false,false
+true,false,false,true,true
+false,false,false,true,true
+true,false,false,true,true
+output
+
+
+Experiment-7
+library(ggplot2)
+
+df <- data.frame(Model = c("JRip", "J48"), 
+                 Accuracy = c(0.80, 0.82))
+
+ggplot(df, aes(x = Model, y = Accuracy, fill = Model)) +
